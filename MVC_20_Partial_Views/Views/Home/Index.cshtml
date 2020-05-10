@@ -1,0 +1,16 @@
+﻿@using MVC_20_Partial_Views.Models
+@model IEnumerable<Car>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach (string item in ViewBag.Categories)
+{
+    <div>@item</div>
+}
+<br />
+@Html.Partial("_CarsPartial")
+<br />
+@Html.Action("_ArabalarPartial", "Home", new { id = 1 }),
+<h2>Sayfa Sonuc</h2>

@@ -1,0 +1,7 @@
+﻿@using MVC_20_Partial_Views.Models
+@model IEnumerable<Car>
+
+@foreach (Car item in Model)
+{
+    <div>@item.ID - @item.Marka - @item.Model</div>
+}
